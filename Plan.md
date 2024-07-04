@@ -7,7 +7,7 @@ the player will lose , also if the player did not guess the word and the places 
 
 1. player will start by choose a letter based on a hint will be given 
 1. if the letter  is correct it will conut it from the the letters of the word if not it will count it as a false one 
-1. there will be a timer if the player didn't guess it he will lose 
+1. there will be a timer if the player didn't guess the word within the timer he will lose 
 
 ## 2. user story
 
