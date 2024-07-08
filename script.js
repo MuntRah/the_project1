@@ -1,7 +1,4 @@
-let idx;
-let letter;
-let currentWord;
-let count = 0;
+/*-------------- Constants -------------*/
 
 const correctness = document.querySelector(".correctness");
 const words = [
@@ -30,18 +27,14 @@ const guessDisplay = document.querySelector(".guess");
 const hintDisplay = document.querySelector(".hint");
 const letterButtons = document.querySelectorAll(".keyboard button");
 const keyboard = document.querySelector(".keyboard");
+/*---------- Variables (state) ---------*/
+let idx;
+let letter;
+let currentWord;
+let count = 0;
+/*----- Cached Element References  -----*/
 
-letterButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const letter = button.innerText;
-    btn(letter);
-  });
-});
-// words.forEach((n) => {
-//   word.innerHTML = n.word;
-//   hintDisplay.innerText = `hint : ${n.hint}`;
-// });
-
+/*-------------- Functions -------------*/
 function rand() {
   idx = Math.floor(Math.random() * words.length);
   currentWord = words[idx].word;
@@ -81,3 +74,14 @@ function btn(str) {
     });
   }
 }
+/*----------- Event Listeners ----------*/
+letterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const letter = button.innerText;
+    btn(letter);
+  });
+});
+// words.forEach((n) => {
+//   word.innerHTML = n.word;
+//   hintDisplay.innerText = `hint : ${n.hint}`;
+// });
