@@ -61,12 +61,12 @@ function btn(str) {
       found = true;
     }
   }
-
-  if (guessDisplay.innerText === currentWord) {
-    correctness.innerText = "You win!";
-  }
-
-  console.log(guessDisplay.innerText);
+  letterButtons.forEach((n) => {
+    if (guessDisplay.innerText === currentWord) {
+      correctness.innerText = "You win!";
+      n.disabled = true;
+    }
+  });
 
   if (!found) {
     wrongDisplay.innerText += str;
