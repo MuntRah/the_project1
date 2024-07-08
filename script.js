@@ -1,6 +1,9 @@
 let idx;
 let letter;
 let currentWord;
+let count = 0;
+
+const correctness = document.querySelector(".correctness");
 const words = [
   { word: "DOG", hint: "Humens best friend" },
   { word: "TREE", hint: "Has leaves and branches" },
@@ -26,6 +29,7 @@ const wordDisplay = document.querySelector(".word");
 const guessDisplay = document.querySelector(".guess");
 const hintDisplay = document.querySelector(".hint");
 const letterButtons = document.querySelectorAll(".keyboard button");
+const keyboard = document.querySelector(".keyboard");
 
 letterButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -43,6 +47,7 @@ function rand() {
   currentWord = words[idx].word;
   wordDisplay.innerText = `${words[idx].word}`;
   hintDisplay.innerText = `hint :${words[idx].hint}`;
+  guessDisplay.innerText = "-".repeat(currentWord.length); // i use the gpt in this line
 }
 document.addEventListener("DOMContentLoaded", rand);
 
@@ -50,18 +55,28 @@ function btn(str) {
   let found = false;
   for (let index = 0; index < currentWord.length; index++) {
     if (currentWord[index] === str) {
-      let wordIndex = guessDisplay.innerText.split("");
+      let wordIndex = guessDisplay.innerText.split(""); // i use the gpt in this line
       wordIndex[index] = str;
-      guessDisplay.innerHTML = wordIndex.join("");
+      guessDisplay.innerHTML = wordIndex.join(""); // i use the gpt in this line
       found = true;
     }
   }
+
+  if (guessDisplay.innerText === currentWord) {
+    correctness.innerText = "You win!";
+  }
+
+  console.log(guessDisplay.innerText);
 
   if (!found) {
     wrongDisplay.innerText += str;
     letterButtons.forEach((button) => {
       if (button.innerText === str) {
         button.disabled = true;
+        count += 1;
+      }
+      if (count === 3) {
+        correctness.innerText = "you lose";
       }
     });
   }

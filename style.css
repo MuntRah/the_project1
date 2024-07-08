@@ -12,13 +12,13 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 250px;
+  margin-top: 120px;
 }
 
 .guess {
   margin-top: 80px;
   text-align: center;
-  font-size: 23px;
+  font-size: 45px;
   font-weight: bold;
 }
 .wrong {
@@ -32,6 +32,7 @@ body {
   height: 80vh;
   width: 80vw;
   margin: 0 auto;
+  margin-top: 50px;
 }
 button {
   width: 60px;
@@ -45,4 +46,10 @@ button {
   text-align: center;
   font-size: 23px;
   font-weight: bold;
+}
+.correctness {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
 }
