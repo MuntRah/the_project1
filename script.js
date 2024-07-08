@@ -19,7 +19,16 @@ const words = [
     hint: "A large natural elevation of the earth's surface",
   },
   { word: "OXYGEN", hint: "A chemical element essential for respiration" },
-  { word: "GUITAR", hint: "A musical instrument with strings" },
+  {
+    word: "BIKE",
+    hint: "something used for transportation and need physical effort",
+  },
+  { word: "LAMP", hint: "Something invented 19th centry" },
+  {
+    word: "COFFEE",
+    hint: "Drink transplanted in africa and maded for first time in yemen ",
+  },
+  { word: "SINGING", hint: "A talent can be discovered in bathroom" },
 ];
 const wrongDisplay = document.querySelector(".wrong");
 const wordDisplay = document.querySelector(".word");
@@ -27,6 +36,8 @@ const guessDisplay = document.querySelector(".guess");
 const hintDisplay = document.querySelector(".hint");
 const letterButtons = document.querySelectorAll(".keyboard button");
 const keyboard = document.querySelector(".keyboard");
+const resetbtn = document.querySelector("#reset");
+const buttons = document.querySelectorAll(".btn");
 /*---------- Variables (state) ---------*/
 let idx;
 let letter;
@@ -35,6 +46,8 @@ let count = 0;
 /*----- Cached Element References  -----*/
 
 /*-------------- Functions -------------*/
+function reset() {}
+
 function rand() {
   idx = Math.floor(Math.random() * words.length);
   currentWord = words[idx].word;
@@ -56,7 +69,9 @@ function btn(str) {
   }
   letterButtons.forEach((n) => {
     if (guessDisplay.innerText === currentWord) {
-      correctness.innerText = "You win!";
+      correctness.innerText = "You win! 🎉";
+      correctness.style.fontWeight = "bold ";
+      correctness.style.color = "green";
       n.disabled = true;
     }
   });
@@ -69,7 +84,12 @@ function btn(str) {
         count += 1;
       }
       if (count === 3) {
-        correctness.innerText = "you lose";
+        correctness.innerText = "you lose 👎";
+        correctness.style.color = "red";
+        correctness.style.fontWeight = "bold";
+        buttons.forEach((n) => {
+          n.disabled = true;
+        });
       }
     });
   }
@@ -81,7 +101,9 @@ letterButtons.forEach((button) => {
     btn(letter);
   });
 });
+
 // words.forEach((n) => {
 //   word.innerHTML = n.word;
 //   hintDisplay.innerText = `hint : ${n.hint}`;
 // });
+resetbtn.addEventListener("click", rand);
