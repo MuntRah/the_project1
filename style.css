@@ -78,6 +78,28 @@ button:hover {
   font-family: "Montserrat", sans-serif;
   font-weight: bolder;
 }
+#change {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-color: #d9afd9;
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  display: inline-block;
+  font-size: 15px;
+}
+
+#change:hover {
+  background-color: silver;
+  color: rgba(0, 0, 0, 0.603);
+  transition: 1s;
+  font-size: 18px;
+  width: 80px;
+}
 #reset {
   margin-top: 20px;
   display: flex;
@@ -89,6 +111,9 @@ button:hover {
 
   color: rgb(255, 255, 255);
   font-family: "Montserrat", sans-serif;
+  margin-left: 1020px;
+  display: inline-block;
+  font-size: 15px;
 }
 
 #reset:hover {
@@ -97,6 +122,10 @@ button:hover {
   transition: 1s;
   font-size: 18px;
   width: 80px;
+}
+.buttonss {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: 420px) {
@@ -107,7 +136,7 @@ button:hover {
   }
   button {
     background-color: rgb(249, 197, 65);
-    
+
     border-radius: 100px;
     margin: 5px;
     box-shadow: 3px 3px 3px 3px silver;
@@ -116,8 +145,8 @@ button:hover {
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
     font-size: 15px;
-    width: 70px;
-    height: 50px;
+    width: 60px;
+    height: 40px;
   }
   .keyboard {
     display: flex;

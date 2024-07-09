@@ -42,8 +42,9 @@ const guessDisplay = document.querySelector(".guess");
 const hintDisplay = document.querySelector(".hint");
 const letterButtons = document.querySelectorAll(".keyboard button");
 const keyboard = document.querySelector(".keyboard");
-const resetbtn = document.querySelector("#reset");
+const changebtn = document.querySelector("#change");
 const buttons = document.querySelectorAll(".btn");
+const resetbtn = document.querySelector("#reset");
 /*---------- Variables (state) ---------*/
 let idx;
 let letter;
@@ -52,7 +53,20 @@ let count = 0;
 /*----- Cached Element References  -----*/
 
 /*-------------- Functions -------------*/
-function reset() {}
+function reset() {
+  idx = undefined;
+  currentWord = undefined;
+  count = 0;
+  wrongDisplay.innerText = "Wrong :";
+  guessDisplay.innerText = "";
+  correctness.innerText = "Message  ";
+  correctness.style.fontWeight = "";
+  correctness.style.color = "";
+  letterButtons.forEach((button) => {
+    button.disabled = false;
+  });
+  rand();
+}
 
 function rand() {
   idx = Math.floor(Math.random() * words.length);
@@ -112,4 +126,5 @@ letterButtons.forEach((button) => {
 //   word.innerHTML = n.word;
 //   hintDisplay.innerText = `hint : ${n.hint}`;
 // });
-resetbtn.addEventListener("click", rand);
+changebtn.addEventListener("click", rand);
+resetbtn.addEventListener("click", reset);
