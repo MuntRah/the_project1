@@ -98,3 +98,32 @@ button:hover {
   font-size: 18px;
   width: 80px;
 }
+
+@media (max-width: 420px) {
+  body {
+    height: 50vh;
+    background-color: #85ffbd;
+    background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  }
+  button {
+    background-color: rgb(249, 197, 65);
+    
+    border-radius: 100px;
+    margin: 5px;
+    box-shadow: 3px 3px 3px 3px silver;
+    border: none;
+    color: azure;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    width: 70px;
+    height: 50px;
+  }
+  .keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
