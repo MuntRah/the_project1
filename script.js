@@ -23,12 +23,18 @@ const words = [
     word: "BIKE",
     hint: "something used for transportation and need physical effort",
   },
-  { word: "LAMP", hint: "Something invented 19th centry" },
+  { word: "LAMP", hint: "Something invented 19th in centry by adeson" },
   {
     word: "COFFEE",
     hint: "Drink transplanted in africa and maded for first time in yemen ",
   },
   { word: "SINGING", hint: "A talent can be discovered in bathroom" },
+  {
+    word: "HUMEN",
+    hint: "Something walk on 4 legs then 2 legs and end with 3 legs",
+  },
+  { word: "WATER", hint: "colorless and have three states" },
+  { word: "FURNCE", hint: "Something with four legs and four eyes" },
 ];
 const wrongDisplay = document.querySelector(".wrong");
 const wordDisplay = document.querySelector(".word");

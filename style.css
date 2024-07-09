@@ -5,6 +5,8 @@ body {
   width: 100vw;
   height: 100vh;
   margin: 0;
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
 }
 
 .keyboard {
@@ -20,38 +22,61 @@ body {
   text-align: center;
   font-size: 45px;
   font-weight: bold;
+  font-family: "Montserrat", sans-serif;
 }
 .wrong {
   margin-top: 40px;
   text-align: center;
   font-size: 23px;
   font-weight: bold;
+  font-family: "Montserrat", sans-serif;
 }
 .container {
-  background-color: antiquewhite;
   height: 80vh;
   width: 80vw;
   margin: 0 auto;
   margin-top: 50px;
 }
 button {
+  background-color: rgb(249, 197, 65);
+  width: 63px;
+  height: 50px;
+  border-radius: 100px;
+  margin: 5px;
+  box-shadow: 3px 3px 3px 3px silver;
+  border: none;
+  color: azure;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+button:hover {
+  background-color: silver;
   width: 60px;
   height: 50px;
   border-radius: 100px;
   margin: 5px;
   box-shadow: 3px 3px 3px 3px silver;
+  border: none;
+  color: rgba(0, 0, 0, 0.841);
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.1s;
 }
 .hint {
   margin-top: 20px;
   text-align: center;
   font-size: 23px;
   font-weight: bold;
+  font-family: "Montserrat", sans-serif;
 }
 .correctness {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
 }
 #reset {
   margin-top: 20px;
@@ -59,5 +84,17 @@ button {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  background-color: rgb(194, 60, 60);
+  background-color: #d9afd9;
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+}
+
+#reset:hover {
+  background-color: silver;
+  color: rgba(0, 0, 0, 0.603);
+  transition: 1s;
+  font-size: 18px;
+  width: 80px;
 }
