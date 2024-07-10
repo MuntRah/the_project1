@@ -22,7 +22,8 @@ body {
   text-align: center;
   font-size: 45px;
   font-weight: bold;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Samsung Sharp Sans', sans-serif;
+                                                
 }
 .wrong {
   color: rgb(172, 10, 10);
@@ -30,7 +31,8 @@ body {
   text-align: center;
   font-size: 23px;
   font-weight: bold;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Samsung Sharp Sans', sans-serif;
+                                                
 }
 .container {
   height: 80vh;
@@ -69,14 +71,15 @@ button:hover {
   text-align: center;
   font-size: 23px;
   font-weight: bold;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Samsung Sharp Sans', sans-serif;
+                                                
 }
 .correctness {
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 35px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Samsung Sharp Sans', sans-serif;
   font-weight: bolder;
 }
 #change {
