@@ -5,8 +5,8 @@ body {
   width: 100vw;
   height: 100vh;
   margin: 0;
-  background-color: #85ffbd;
-  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  background-color: #ffffff;
+  background-image: linear-gradient(0deg, #ffffff 0%, #cacaca 100%);
 }
 
 .keyboard {
@@ -25,6 +25,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 .wrong {
+  color: rgb(172, 10, 10);
   margin-top: 40px;
   text-align: center;
   font-size: 23px;
@@ -38,7 +39,7 @@ body {
   margin-top: 50px;
 }
 button {
-  background-color: rgb(249, 197, 65);
+  background-color: #a2aee2;
   width: 63px;
   height: 50px;
   border-radius: 100px;
@@ -84,8 +85,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  background-color: #d9afd9;
-  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+  background-color: #e2aaa6;
 
   color: rgb(255, 255, 255);
   font-family: "Montserrat", sans-serif;
@@ -106,8 +106,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  background-color: #d9afd9;
-  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+  background-color: #e2aaa6;
 
   color: rgb(255, 255, 255);
   font-family: "Montserrat", sans-serif;
@@ -131,11 +130,10 @@ button:hover {
 @media (max-width: 450px) {
   body {
     height: 50vh;
-    background-color: #85ffbd;
-    background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+    background-color: #cacaca;
   }
   button {
-    background-color: rgb(249, 197, 65);
+    background-color: #a2aee2;
 
     border-radius: 100px;
     margin: 5px;
@@ -161,9 +159,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    background-color: #d9afd9;
-    background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
-
+    background-color: #e2aaa6;
     color: rgb(255, 255, 255);
     font-family: "Montserrat", sans-serif;
     display: inline-block;
@@ -175,8 +171,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    background-color: #d9afd9;
-    background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+    background-color: #e2aaa6;
 
     color: rgb(255, 255, 255);
     font-family: "Montserrat", sans-serif;
