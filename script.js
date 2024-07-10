@@ -36,6 +36,8 @@ const words = [
   { word: "WATER", hint: "colorless and have three states" },
   { word: "FURNCE", hint: "Something with four legs and four eyes" },
 ];
+let win = document.querySelector("#win");
+let lose = document.querySelector("#lose");
 const wrongDisplay = document.querySelector(".wrong");
 const wordDisplay = document.querySelector(".word");
 const guessDisplay = document.querySelector(".guess");
@@ -72,7 +74,7 @@ function rand() {
   idx = Math.floor(Math.random() * words.length);
   currentWord = words[idx].word;
   wordDisplay.innerText = `${words[idx].word}`;
-  hintDisplay.innerText = `hint :${words[idx].hint}`;
+  hintDisplay.innerText = `Hint :${words[idx].hint}`;
   guessDisplay.innerText = "-".repeat(currentWord.length); // i use the gpt in this line
 }
 document.addEventListener("DOMContentLoaded", rand);
@@ -93,6 +95,7 @@ function btn(str) {
       correctness.style.fontWeight = "bold ";
       correctness.style.color = "green";
       n.disabled = true;
+      win.play();
     }
   });
 
@@ -109,6 +112,7 @@ function btn(str) {
         correctness.style.fontWeight = "bold";
         buttons.forEach((n) => {
           n.disabled = true;
+          lose.play();
         });
       }
     });
