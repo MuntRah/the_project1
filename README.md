@@ -4,7 +4,7 @@
 
 ## by: Muntadher Ali
 
-[The Game](https://muntrah.github.io/the_project1/) | [The Plan](https://github.com/MuntRah/the_project1/blob/main/Plan.md)
+[the game](https://muntrah.github.io/the_project1/) | [The Plan](https://github.com/MuntRah/the_project1/blob/main/Plan.md)
 
 ## 1- _the game description_
 
@@ -33,10 +33,10 @@ the game is gives the players hints and the player should guess based on that hi
 
 ## 4-_ScreenShot_
 
-![the main](./Screenshot%202024-07-10%20114420.png)
-![the lose](./Screenshot%202024-07-10%20114440.png)
-![the win](./Screenshot%202024-07-10%20114506.png)
-![the reset](./Screenshot%202024-07-10%20114524.png)
+![the main](./Screenshot%202024-07-10%20145635.png)
+![the lose](./Screenshot%202024-07-10%20145648.png)
+![the win](./Screenshot%202024-07-10%20145710.png)
+![the reset](./Screenshot%202024-07-10%20145723.png)
 
 ## 5- _Future updates_
 
@@ -52,3 +52,5 @@ Win and Lose sound effects : [audios](https://pixabay.com/sound-effects/search/s
 the repeat , split and join methods 3 lines : chat gpt
 
 how to add audios tut : [tutorial](https://noaheakin.medium.com/adding-sound-to-your-js-web-app-f6a0ca728984#:~:text=The%20simplest%20way%20to%20add,starts%20playing%20the%20current%20audio.)
+
+the icon : [icon](https://favicon.io/emoji-favicons/a-button-blood-type)
