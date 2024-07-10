@@ -130,5 +130,4 @@ letterButtons.forEach((button) => {
 //   word.innerHTML = n.word;
 //   hintDisplay.innerText = `hint : ${n.hint}`;
 // });
-changebtn.addEventListener("click", rand);
 resetbtn.addEventListener("click", reset);
