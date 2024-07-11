@@ -1,4 +1,4 @@
-# **Hangman game**
+# **guess word game**
 
 ## Date: 7/11/2024
 
