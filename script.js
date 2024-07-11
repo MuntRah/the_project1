@@ -75,16 +75,16 @@ function rand() {
   currentWord = words[idx].word;
   wordDisplay.innerText = `${words[idx].word}`;
   hintDisplay.innerText = `Hint :${words[idx].hint}`;
-  guessDisplay.innerText = "-".repeat(currentWord.length); // i use the gpt in this line
+  guessDisplay.innerText = "-".repeat(currentWord.length); 
 }
 
 function btn(str) {
   let found = false;
   for (let index = 0; index < currentWord.length; index++) {
     if (currentWord[index] === str) {
-      let wordIndex = guessDisplay.innerText.split(""); // i use the gpt in this line
+      let wordIndex = guessDisplay.innerText.split(""); 
       wordIndex[index] = str;
-      guessDisplay.innerHTML = wordIndex.join(""); // i use the gpt in this line
+      guessDisplay.innerHTML = wordIndex.join(""); 
       found = true;
     }
   }
