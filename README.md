@@ -1,6 +1,6 @@
 # **Hangman game**
 
-## Date: 7/10/2024
+## Date: 7/11/2024
 
 ## by: Muntadher Ali
 

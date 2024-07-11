@@ -56,8 +56,8 @@ let count = 0;
 
 /*-------------- Functions -------------*/
 function reset() {
-  idx = undefined;
-  currentWord = undefined;
+  idx = "";
+  currentWord = "";
   count = 0;
   wrongDisplay.innerText = "Wrong :";
   guessDisplay.innerText = "";
@@ -77,7 +77,6 @@ function rand() {
   hintDisplay.innerText = `Hint :${words[idx].hint}`;
   guessDisplay.innerText = "-".repeat(currentWord.length); // i use the gpt in this line
 }
-document.addEventListener("DOMContentLoaded", rand);
 
 function btn(str) {
   let found = false;
@@ -130,4 +129,5 @@ letterButtons.forEach((button) => {
 //   word.innerHTML = n.word;
 //   hintDisplay.innerText = `hint : ${n.hint}`;
 // });
+document.addEventListener("DOMContentLoaded", rand);
 resetbtn.addEventListener("click", reset);
