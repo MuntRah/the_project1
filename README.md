@@ -4,7 +4,7 @@
 
 ## by: Muntadher Ali
 
-[the game](https://muntrah.github.io/the_project1/) | [The Plan](https://github.com/MuntRah/the_project1/blob/main/Plan.md)
+[the game](https://muntrah.github.io/the_words_game/) | [The Plan](https://github.com/MuntRah/the_project1/blob/main/Plan.md)
 
 ## 1- _the game description_
 
